@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Good Night, Afifa 🌙</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(180deg,#020617,#07152d,#0f172a);
+height:100vh;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+}
+
+#sky{
+position:fixed;
+inset:0;
+overflow:hidden;
+}
+
+.star{
+position:absolute;
+width:2px;
+height:2px;
+background:white;
+border-radius:50%;
+animation:twinkle 2.5s infinite;
+}
+
+@keyframes twinkle{
+50%{opacity:.2;}
+}
+
+.moon{
+position:absolute;
+top:70px;
+right:90px;
+width:110px;
+height:110px;
+background:#fff8d6;
+border-radius:50%;
+box-shadow:0 0 60px #fff6b0;
+}
+
+.card{
+
+width:92%;
+max-width:760px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+border-radius:25px;
+
+padding:45px;
+
+text-align:center;
+
+box-shadow:0 0 35px rgba(0,0,0,.45);
+
+z-index:10;
+
+animation:fade .8s;
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+.page{
+
+display:none;
+
+}
+
+.show{
+
+display:block;
+
+}
+
+h1{
+
+font-size:42px;
+
+margin-bottom:15px;
+
+}
+
+h2{
+
+margin-bottom:20px;
+
+color:#ffd54f;
+
+}
+
+p{
+
+line-height:2;
+
+font-size:18px;
+
+}
+
+button{
+
+margin-top:35px;
+
+padding:14px 35px;
+
+border:none;
+
+border-radius:40px;
+
+background:#2563eb;
+
+color:white;
+
+font-size:18px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+
+}
+
+.typing{
+
+overflow:hidden;
+white-space:nowrap;
+width:0;
+border-right:2px solid white;
+animation:typing 4s steps(40,end) forwards;
+
+}
+
+@keyframes typing{
+
+from{width:0;}
+to{width:100%;}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="sky">
+<div class="moon"></div>
+</div>
+
+<div class="card">
+
+<div id="page1" class="page show">
+
+<h1 class="typing">
+🌙 Good Night, Afifa
+</h1>
+
+<br>
+
+<p>
+
+Before you close your eyes tonight,
+
+I just wanted to leave
+
+a few sincere words
+
+and a small prayer.
+
+</p>
+
+<button onclick="go(2)">
+Continue →
+</button>
+
+</div>
+
+<div id="page2" class="page">
+
+<h2>🤲 A Prayer</h2>
+
+<p>
+
+May Allah replace
+
+every worry in your heart
+
+with peace,
+
+every hardship
+
+with ease,
+
+and every sincere dua
+
+with acceptance.
+
+Ameen.
+
+</p>
+
+<button onclick="go(3)">
+Next →
+</button>
+
+</div>
+<div id="page3" class="page">
+
+<h2>🌿 A Gentle Reminder</h2>
+
+<p>
+
+Life isn't always easy.
+
+But every hardship carries wisdom.
+
+Every delay has a purpose.
+
+And every sincere effort
+is known to Allah.
+
+So keep believing.
+
+Keep growing.
+
+Keep smiling.
+
+</p>
+
+<button onclick="go(4)">
+Continue →
+</button>
+
+</div>
+<div id="page4" class="page">
+
+<h2>✨ Before You Leave...</h2>
+
+<p style="line-height:2">
+
+I won't ask you to remember me.
+
+<br><br>
+
+<b>
+I'll just try to become
+someone worth remembering.
+</b>
+
+<br><br>
+
+Some memories don't ask to stay;
+
+they simply find a place
+in the heart.
+
+🌸
+
+<br><br>
+
+May Allah always protect you,
+
+guide you,
+
+and bless your life
+
+with happiness,
+
+peace,
+
+and endless barakah.
+
+Ameen. 🤲
+
+<br><br>
+
+Take care of yourself.
+
+Sleep peacefully.
+
+<br><br>
+
+<p style="color:#FFD54F;font-style:italic;font-size:17px;line-height:1.8;">
+"May tomorrow bring you more peace than today,
+and more reasons to smile than yesterday." 🌙
+</p>
+
+<br>
+
+<b>Good Night, Afifa.</b>
+
+<br><br>
+
+<span style="opacity:.8;">
+— Someone who sincerely wishes you well.
+</span>
+
+</p>
+
+</div>
