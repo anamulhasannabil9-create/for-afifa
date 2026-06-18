@@ -17,26 +17,27 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-background:linear-gradient(180deg,#020617,#07152d,#0f172a);
 height:100vh;
 overflow:hidden;
 display:flex;
 justify-content:center;
 align-items:center;
-color:white;
+background:linear-gradient(180deg,#020617,#07152d,#0f172a);
+color:#fff;
 }
 
 #sky{
 position:fixed;
 inset:0;
 overflow:hidden;
+z-index:0;
 }
 
 .star{
 position:absolute;
 width:2px;
 height:2px;
-background:white;
+background:#fff;
 border-radius:50%;
 animation:twinkle 2.5s infinite;
 }
@@ -47,138 +48,96 @@ animation:twinkle 2.5s infinite;
 
 .moon{
 position:absolute;
-top:70px;
-right:90px;
+top:60px;
+right:80px;
 width:110px;
 height:110px;
-background:#fff8d6;
 border-radius:50%;
-box-shadow:0 0 60px #fff6b0;
+background:#fff7d6;
+box-shadow:0 0 60px #fff3a6;
 }
 
 .card{
-
-width:92%;
+position:relative;
+z-index:2;
+width:90%;
 max-width:760px;
-
-background:rgba(255,255,255,.08);
-
-backdrop-filter:blur(18px);
-
-border-radius:25px;
-
 padding:45px;
-
+border-radius:25px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(18px);
 text-align:center;
-
-box-shadow:0 0 35px rgba(0,0,0,.45);
-
-z-index:10;
-
+box-shadow:0 0 30px rgba(0,0,0,.45);
 animation:fade .8s;
-
 }
 
 @keyframes fade{
-
 from{
-
 opacity:0;
 transform:translateY(20px);
-
 }
-
 to{
-
 opacity:1;
 transform:translateY(0);
-
 }
-
 }
 
 .page{
-
 display:none;
-
+animation:fade .5s;
 }
 
 .show{
-
 display:block;
-
 }
 
 h1{
-
-font-size:42px;
-
-margin-bottom:15px;
-
+font-size:40px;
+margin-bottom:20px;
 }
 
 h2{
-
-margin-bottom:20px;
-
-color:#ffd54f;
-
+color:#FFD54F;
+margin-bottom:18px;
 }
 
 p{
-
-line-height:2;
-
 font-size:18px;
-
+line-height:2;
 }
 
 button{
-
 margin-top:35px;
-
 padding:14px 35px;
-
 border:none;
-
-border-radius:40px;
-
+border-radius:35px;
 background:#2563eb;
-
-color:white;
-
-font-size:18px;
-
+color:#fff;
+font-size:17px;
 cursor:pointer;
-
 transition:.3s;
-
 }
 
 button:hover{
-
-transform:scale(1.08);
-
+transform:scale(1.05);
+background:#1d4ed8;
 }
 
 .typing{
-
 overflow:hidden;
 white-space:nowrap;
 width:0;
 border-right:2px solid white;
 animation:typing 4s steps(40,end) forwards;
-
 }
 
 @keyframes typing{
-
 from{width:0;}
 to{width:100%;}
-
 }
 
 </style>
+
 </head>
 
 <body>
@@ -195,16 +154,12 @@ to{width:100%;}
 🌙 Good Night, Afifa
 </h1>
 
-<br>
-
 <p>
 
 Before you close your eyes tonight,
 
 I just wanted to leave
-
 a few sincere words
-
 and a small prayer.
 
 </p>
@@ -217,23 +172,21 @@ Continue →
 
 <div id="page2" class="page">
 
-<h2>🤲 A Prayer</h2>
+<h2>🤲 A Small Prayer</h2>
 
 <p>
 
-May Allah replace
-
-every worry in your heart
-
+May Allah replace every worry
 with peace,
 
 every hardship
-
 with ease,
 
-and every sincere dua
+every sincere dua
+with acceptance,
 
-with acceptance.
+and bless your tomorrow
+with happiness.
 
 Ameen.
 
@@ -244,97 +197,202 @@ Next →
 </button>
 
 </div>
-<div id="page3" class="page">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Good Night, Afifa 🌙</title>
 
-<h2>🌿 A Gentle Reminder</h2>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+height:100vh;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(180deg,#020617,#07152d,#0f172a);
+color:#fff;
+}
+
+#sky{
+position:fixed;
+inset:0;
+overflow:hidden;
+z-index:0;
+}
+
+.star{
+position:absolute;
+width:2px;
+height:2px;
+background:#fff;
+border-radius:50%;
+animation:twinkle 2.5s infinite;
+}
+
+@keyframes twinkle{
+50%{opacity:.2;}
+}
+
+.moon{
+position:absolute;
+top:60px;
+right:80px;
+width:110px;
+height:110px;
+border-radius:50%;
+background:#fff7d6;
+box-shadow:0 0 60px #fff3a6;
+}
+
+.card{
+position:relative;
+z-index:2;
+width:90%;
+max-width:760px;
+padding:45px;
+border-radius:25px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(18px);
+text-align:center;
+box-shadow:0 0 30px rgba(0,0,0,.45);
+animation:fade .8s;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.page{
+display:none;
+animation:fade .5s;
+}
+
+.show{
+display:block;
+}
+
+h1{
+font-size:40px;
+margin-bottom:20px;
+}
+
+h2{
+color:#FFD54F;
+margin-bottom:18px;
+}
+
+p{
+font-size:18px;
+line-height:2;
+}
+
+button{
+margin-top:35px;
+padding:14px 35px;
+border:none;
+border-radius:35px;
+background:#2563eb;
+color:#fff;
+font-size:17px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+background:#1d4ed8;
+}
+
+.typing{
+overflow:hidden;
+white-space:nowrap;
+width:0;
+border-right:2px solid white;
+animation:typing 4s steps(40,end) forwards;
+}
+
+@keyframes typing{
+from{width:0;}
+to{width:100%;}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="sky">
+<div class="moon"></div>
+</div>
+
+<div class="card">
+
+<div id="page1" class="page show">
+
+<h1 class="typing">
+🌙 Good Night, Afifa
+</h1>
 
 <p>
 
-Life isn't always easy.
+Before you close your eyes tonight,
 
-But every hardship carries wisdom.
-
-Every delay has a purpose.
-
-And every sincere effort
-is known to Allah.
-
-So keep believing.
-
-Keep growing.
-
-Keep smiling.
+I just wanted to leave
+a few sincere words
+and a small prayer.
 
 </p>
 
-<button onclick="go(4)">
+<button onclick="go(2)">
 Continue →
 </button>
 
 </div>
-<div id="page4" class="page">
 
-<h2>✨ Before You Leave...</h2>
+<div id="page2" class="page">
 
-<p style="line-height:2">
+<h2>🤲 A Small Prayer</h2>
 
-I won't ask you to remember me.
+<p>
 
-<br><br>
+May Allah replace every worry
+with peace,
 
-<b>
-I'll just try to become
-someone worth remembering.
-</b>
+every hardship
+with ease,
 
-<br><br>
+every sincere dua
+with acceptance,
 
-Some memories don't ask to stay;
+and bless your tomorrow
+with happiness.
 
-they simply find a place
-in the heart.
-
-🌸
-
-<br><br>
-
-May Allah always protect you,
-
-guide you,
-
-and bless your life
-
-with happiness,
-
-peace,
-
-and endless barakah.
-
-Ameen. 🤲
-
-<br><br>
-
-Take care of yourself.
-
-Sleep peacefully.
-
-<br><br>
-
-<p style="color:#FFD54F;font-style:italic;font-size:17px;line-height:1.8;">
-"May tomorrow bring you more peace than today,
-and more reasons to smile than yesterday." 🌙
-</p>
-
-<br>
-
-<b>Good Night, Afifa.</b>
-
-<br><br>
-
-<span style="opacity:.8;">
-— Someone who sincerely wishes you well.
-</span>
+Ameen.
 
 </p>
+
+<button onclick="go(3)">
+Next →
+</button>
 
 </div>
