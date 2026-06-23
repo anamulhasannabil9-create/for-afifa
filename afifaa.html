@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Good Night, Afifa 🤍</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+background:linear-gradient(180deg,#020617,#07152d,#0f172a);
+
+height:100vh;
+
+overflow:hidden;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+color:white;
+
+}
+
+#sky{
+
+position:fixed;
+
+inset:0;
+
+overflow:hidden;
+
+}
+
+.star{
+
+position:absolute;
+
+width:2px;
+
+height:2px;
+
+background:white;
+
+border-radius:50%;
+
+animation:twinkle 2.5s infinite;
+
+}
+
+@keyframes twinkle{
+
+50%{opacity:.2;}
+
+}
+
+.moon{
+
+position:absolute;
+
+top:70px;
+
+right:80px;
+
+width:110px;
+
+height:110px;
+
+border-radius:50%;
+
+background:#fff8d7;
+
+box-shadow:0 0 60px #fff4af;
+
+}
+
+.card{
+
+width:92%;
+
+max-width:760px;
+
+padding:45px;
+
+border-radius:25px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+text-align:center;
+
+box-shadow:0 0 30px rgba(0,0,0,.45);
+
+z-index:5;
+
+animation:fade .8s;
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.page{
+
+display:none;
+
+animation:fade .6s;
+
+}
+
+.show{
+
+display:block;
+
+}
+
+h1{
+
+font-size:40px;
+
+margin-bottom:20px;
+
+}
+
+h2{
+
+margin-bottom:20px;
+
+color:#FFD54F;
+
+}
+
+p{
+
+font-size:18px;
+
+line-height:2;
+
+}
+
+button{
+
+margin-top:35px;
+
+padding:14px 36px;
+
+border:none;
+
+border-radius:40px;
+
+background:#2563eb;
+
+color:white;
+
+font-size:17px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.07);
+
+}
+
+.typing{
+
+overflow:hidden;
+
+white-space:nowrap;
+
+width:0;
+
+border-right:2px solid white;
+
+animation:typing 4s steps(40,end) forwards;
+
+}
+
+@keyframes typing{
+
+from{width:0;}
+
+to{width:100%;}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="sky">
+
+<div class="moon"></div>
+
+</div>
+
+<div class="card">
+
+<div id="page1" class="page show">
+
+<h1 class="typing">
+
+🌙 Good Night, Afifa
+
+</h1>
+
+<p>
+
+Assalamu Alaikum. 🤍
+
+<br><br>
+
+Before this day quietly comes to an end,
+
+I just wanted to leave
+
+a few sincere words
+
+for someone
+
+who deserves peace,
+
+kindness,
+
+and countless reasons to smile.
+
+</p>
+
+<button onclick="go(2)">
+
+Open Letter →
+
+</button>
+
+</div>
+
+<div id="page2" class="page">
+
+<h2>🌸 A Small Thought</h2>
+
+<p>
+
+Some people leave
+
+an impression
+
+without even trying.
+
+Not because they speak
+
+the loudest...
+
+but because
+
+their character
+
+speaks for them.
+
+<br><br>
+
+I genuinely hope
+
+you always remain
+
+one of those people.
+
+</p>
+
+<button onclick="go(3)">
+
+Continue →
+
+</button>
+
+</div>
+<div id="page3" class="page">
+
+<h2>🤲 A Prayer For You</h2>
+
+<p>
+
+May Allah protect your heart
+
+from every sadness,
+
+replace every worry
+
+with peace,
+
+accept every sincere dua
+
+you make,
+
+and bless your future
+
+with barakah,
+
+happiness,
+
+and endless goodness.
+
+<br><br>
+
+Ameen. 🤍
+
+</p>
+
+<button onclick="go(4)">
+Continue →
+</button>
+
+</div>
+
+<div id="page4" class="page">
+
+<h2>💙 Before You Sleep...</h2>
+
+<p>
+
+Leave today's worries to Allah.
+
+Rest your heart.
+
+Tomorrow is another chance
+
+to smile,
+
+to grow,
+
+and to become
+
+even better
+
+than yesterday.
+
+</p>
+
+<button onclick="go(5)">
+One Last Page →
+</button>
+
+</div>
+
+<div id="page5" class="page">
+
+<h2>🌙 One Last Line...</h2>
+
+<p>
+
+I don't know
+
+what Allah
+
+has written
+
+for our future.
+
+<br><br>
+
+But I do know this...
+
+Meeting kind people
+
+is always a blessing.
+
+<br><br>
+
+<b>
+
+If Allah ever writes
+
+a beautiful story
+
+for our paths,
+
+I hope it begins
+
+with respect,
+
+sincere intentions,
+
+and prayers
+
+for each other's happiness.
+
+🤍
+
+</b>
+
+<br><br>
+
+May tomorrow bring you
+
+more peace than today,
+
+more hope than yesterday,
+
+and more reasons to smile
+
+than you expect.
+
+🌸
+
+<br><br>
+
+<b>
+
+Good Night,
+
+Afifa.
+
+🌙
+
+</b>
+
+<br><br>
+
+<span style="opacity:.8">
+
+— Someone who sincerely prays for your happiness.
+
+</span>
+
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+function go(n){
+
+document.querySelector(".show").classList.remove("show");
+
+document.getElementById("page"+n).classList.add("show");
+
+}
+
+const sky=document.getElementById("sky");
+
+for(let i=0;i<180;i++){
+
+let s=document.createElement("div");
+
+s.className="star";
+
+s.style.left=Math.random()*100+"vw";
+
+s.style.top=Math.random()*100+"vh";
+
+s.style.animationDelay=Math.random()*2+"s";
+
+sky.appendChild(s);
+
+}
+
+// Shooting Stars
+
+setInterval(()=>{
+
+let star=document.createElement("div");
+
+star.style.position="fixed";
+
+star.style.left="-150px";
+
+star.style.top=Math.random()*40+"vh";
+
+star.style.width="120px";
+
+star.style.height="2px";
+
+star.style.background="linear-gradient(90deg,#fff,transparent)";
+
+star.style.transform="rotate(-25deg)";
+
+star.style.transition="2s linear";
+
+document.body.appendChild(star);
+
+setTimeout(()=>{
+
+star.style.left="120vw";
+
+star.style.top=Math.random()*70+"vh";
+
+},50);
+
+setTimeout(()=>{
+
+star.remove();
+
+},2200);
+
+},3500);
+
+// Falling Flowers
+
+setInterval(()=>{
+
+let f=document.createElement("div");
+
+f.innerHTML="🌸";
+
+f.style.position="fixed";
+
+f.style.left=Math.random()*100+"vw";
+
+f.style.top="-30px";
+
+f.style.fontSize=(18+Math.random()*12)+"px";
+
+f.style.transition="10s linear";
+
+document.body.appendChild(f);
+
+setTimeout(()=>{
+
+f.style.top="110vh";
+
+f.style.transform="rotate(720deg)";
+
+},50);
+
+setTimeout(()=>{
+
+f.remove();
+
+},10500);
+
+},900);
+
+</script>
+
+</body>
+</html>
