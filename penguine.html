@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For My White Penguin 🤍🐧</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+background:linear-gradient(180deg,#08121f,#112240,#1d3557);
+
+color:white;
+
+overflow:hidden;
+
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+
+}
+
+#bg{
+position:fixed;
+inset:0;
+overflow:hidden;
+z-index:-1;
+}
+
+.star{
+
+position:absolute;
+width:2px;
+height:2px;
+background:white;
+border-radius:50%;
+animation:twinkle 2.5s infinite;
+
+}
+
+@keyframes twinkle{
+
+50%{opacity:.2;}
+
+}
+
+.card{
+
+width:92%;
+max-width:760px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+border-radius:30px;
+
+padding:50px;
+
+text-align:center;
+
+box-shadow:0 0 40px rgba(0,0,0,.45);
+
+animation:fade .8s;
+
+}
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(25px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.typing{
+
+font-size:46px;
+
+font-weight:700;
+
+overflow:hidden;
+
+white-space:nowrap;
+
+width:0;
+
+border-right:2px solid white;
+
+animation:typing 4s steps(40,end) forwards;
+
+}
+
+@keyframes typing{
+
+from{width:0;}
+
+to{width:100%;}
+
+}
+
+.subtitle{
+
+margin-top:15px;
+
+color:#b8d8ff;
+
+font-size:22px;
+
+}
+
+p{
+
+margin-top:30px;
+
+font-size:18px;
+
+line-height:2;
+
+}
+
+.tag{
+
+display:inline-block;
+
+margin-top:28px;
+
+padding:12px 24px;
+
+border-radius:50px;
+
+background:rgba(255,255,255,.12);
+
+color:#fff;
+
+}
+
+button{
+
+margin-top:35px;
+
+padding:15px 38px;
+
+border:none;
+
+border-radius:40px;
+
+background:#60a5fa;
+
+color:white;
+
+font-size:18px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+
+background:#3b82f6;
+
+}
+
+.page{
+
+display:none;
+
+}
+
+.show{
+
+display:block;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="bg"></div>
+
+<div class="card">
+
+<div id="page1" class="page show">
+
+<h1 class="typing">
+
+🤍 White Penguin 🐧
+
+</h1>
+
+<div class="subtitle">
+
+A small place made especially for you.
+
+</div>
+
+<p>
+
+Not everyone
+
+earns a special nickname.
+
+But somehow...
+
+you did.
+
+🤍
+
+<br><br>
+
+Maybe because
+
+your kindness,
+
+your simplicity,
+
+and your smile
+
+always leave
+
+a little peace behind.
+
+</p>
+
+<div class="tag">
+
+🐧 White Penguin • 🌙 One of My Favorite People
+
+</div>
+
+<br>
+
+<button onclick="go(2)">
+
+Continue →
+
+</button>
+
+</div>
+<div id="page2" class="page">
+
+<h2 style="color:#BFE8FF;">🐧 Why "White Penguin"?</h2>
+
+<p>
+
+You probably don't know...
+
+why I call you
+
+my White Penguin.
+
+<br><br>
+
+Because penguins are calm,
+
+gentle,
+
+loyal,
+
+and somehow...
+
+they always make people smile.
+
+🤍
+
+<br><br>
+
+I don't know if you'll agree,
+
+but every time
+
+I think of that nickname,
+
+your smile
+
+is the first thing
+
+that comes to my mind.
+
+✨
+
+</p>
+
+<button onclick="go(3)">
+
+Next →
+
+</button>
+
+</div>
+
+<div id="page3" class="page">
+
+<h2 style="color:#FFD6EC;">🌸 A Few Honest Words</h2>
+
+<p>
+
+Some people
+
+leave an impression.
+
+Some people
+
+leave memories.
+
+<br><br>
+
+And then...
+
+there are a few
+
+who quietly
+
+become
+
+a beautiful part
+
+of someone's day.
+
+🤍
+
+<br><br>
+
+Whether you realize it or not,
+
+your kindness,
+
+your simplicity,
+
+and the way you carry yourself...
+
+make you
+
+a genuinely beautiful person.
+
+🌷
+
+</p>
+
+<button onclick="go(4)">
+
+Continue →
+
+</button>
+
+</div>
+
+<div id="page4" class="page">
+
+<h2 style="color:#FFE58A;">🤲 One Little Dua</h2>
+
+<p>
+
+May Allah
+
+protect your smile,
+
+bring peace
+
+to your heart,
+
+fill your life
+
+with happiness,
+
+and accept
+
+every sincere dua
+
+you make.
+
+Ameen. 🤲
+
+<br><br>
+
+And...
+
+before I go...
+
+there's one tiny confession.
+
+😅
+
+<br><br>
+
+I still think
+
+"White Penguin"
+
+is the cutest nickname
+
+I've ever given someone.
+
+🐧🤍
+
+<br><br>
+
+<span style="color:#FFD6EC;font-style:italic;">
+
+(P.S. — Ammu still calls you
+"Bowma" sometimes... 😄)
+
+</span>
+
+<br><br>
+
+<b>
+
+Take care of yourself,
+
+White Penguin.
+
+May Allah always keep you smiling.
+
+🤍
+
+</b>
+
+<br><br>
+
+<span style="opacity:.8;">
+
+— Someone who genuinely enjoys seeing you smile.
+
+</span>
+
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+function go(page){
+
+document.querySelectorAll(".page").forEach(p=>{
+
+p.classList.remove("show");
+
+});
+
+document.getElementById("page"+page).classList.add("show");
+
+}
+
+// Stars
+
+const bg=document.getElementById("bg");
+
+for(let i=0;i<180;i++){
+
+let s=document.createElement("div");
+
+s.className="star";
+
+s.style.left=Math.random()*100+"vw";
+
+s.style.top=Math.random()*100+"vh";
+
+s.style.animationDelay=Math.random()*2+"s";
+
+bg.appendChild(s);
+
+}
+
+// Floating Hearts
+
+setInterval(()=>{
+
+let h=document.createElement("div");
+
+h.innerHTML=["🤍","💙","✨","🐧"][Math.floor(Math.random()*4)];
+
+h.style.position="fixed";
+
+h.style.left=Math.random()*100+"vw";
+
+h.style.top="100vh";
+
+h.style.fontSize=(18+Math.random()*18)+"px";
+
+h.style.transition="8s linear";
+
+document.body.appendChild(h);
+
+setTimeout(()=>{
+
+h.style.top="-10vh";
+
+},50);
+
+setTimeout(()=>{
+
+h.remove();
+
+},8500);
+
+},500);
+
+</script>
+
+</body>
+</html>
